@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'),url(./assets//fonts/Poppins/Poppins-Regular.ttf) format('ttf')
+}
+
+
+input:invalid[blured = 'true'] ~ span{
+ display: block;
+}
+input:invalid[blured = 'true']{
+ border : 2px solid  #f87171;
+}
+
+
+
+  
+
+
+  
+  .loader {
+   
+    animation: rotate 1s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) scale(0.2);
+      border-radius: 10%;
+    }
+    50% {
+      transform: rotate(180deg) scale(1.5);
+      border-radius: 50%;
+    }
+    100% {
+      transform: rotate(360deg) scale(0.2);
+      border-radius: 10%;
+    }
+  }
+    
+
+  .spinner {
+    width: 30px;
+    height: 30px;
+    border : 3px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotate 1s linear infinite;
+  }
+
+
+  @keyframes rotate {
+    100%   {transform: rotate(360deg)}
+  }
+
+
+
+
+  .ql-container{
+    min-height: 200px;
+    overflow: auto;
+  }
+
+  #root{
+  background-color: rgb(231, 231, 231);
+  overflow: hidden;
+  position: relative;
+
+}
